@@ -1,4 +1,4 @@
-from django_filters import FilterSet, filters
+from django_filters import FilterSet
 
 from farm_base.api.v1.filters.fields import NumberInFilter
 from farm_base.models import Owner

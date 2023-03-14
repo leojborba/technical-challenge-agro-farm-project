@@ -5,7 +5,7 @@ from rest_framework import serializers
 
 
 def cpf_validator(value):
-    patterns = ["(^[0-9]{3}\.[0-9]{3}\.[0-9]{3}\-[0-9]{2}$)", "(^[0-9]{11}$)"]
+    patterns = [r"(^[0-9]{3}\.[0-9]{3}\.[0-9]{3}\-[0-9]{2}$)", "(^[0-9]{11}$)"]
     for p in patterns:
         if re.match(p, value):
             return

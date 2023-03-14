@@ -15,7 +15,6 @@ class OwnerListCreateView(generics.ListCreateAPIView):
     search_fields = ['name', 'document']
 
 
-class OwnerRetrieveUpdateDestroyView(
-    generics.RetrieveUpdateDestroyAPIView):
+class OwnerRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
     queryset = Owner.objects.filter(is_active=True)
     serializer_class = OwnerDetailSerializer

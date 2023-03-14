@@ -22,7 +22,6 @@ class FarmListCreateView(generics.ListCreateAPIView):
         serializer.save(area=area, centroid=centroid)
 
 
-class FarmRetrieveUpdateDestroyView(
-    generics.RetrieveUpdateDestroyAPIView):
+class FarmRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
     queryset = Farm.objects.filter(is_active=True)
     serializer_class = FarmDetailSerializer

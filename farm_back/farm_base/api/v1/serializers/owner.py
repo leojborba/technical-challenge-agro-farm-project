@@ -25,4 +25,3 @@ class OwnerDetailSerializer(serializers.ModelSerializer):
         model = Owner
         fields = ['id', 'name', 'document', 'document_type']
         read_only_fields = ['id', 'document', 'document_type']
-
