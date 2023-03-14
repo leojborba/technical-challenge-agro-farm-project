@@ -64,3 +64,6 @@ webencodings==0.5.1
 zipp==0.5.2
 
 flake8==6.0.0
+pytest-django==4.5.2
+factory-boy==3.2.1
+pytest-factoryboy==2.1.0
